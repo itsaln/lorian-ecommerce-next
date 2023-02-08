@@ -1,16 +1,22 @@
 import { FC } from 'react'
 
+import Row from '@/ui/grid/Row'
+
 import styles from './Header.module.scss'
-import Cart from './cart/Cart'
-import Menu from './menu/Menu'
-// import Search from './search/Search'
+import HeaderButtons from './buttons/HeaderButtons'
+import HeaderLogo from './logo/HeaderLogo'
+import HeaderMenu from './menu/HeaderMenu'
+import HeaderProfile from './profile/HeaderProfile'
 
 const Header: FC = () => {
 	return (
 		<header className={styles.header}>
-			<Menu />
-			{/*<Search />*/}
-			<Cart />
+			<Row>
+				<HeaderLogo />
+				<HeaderMenu />
+				<HeaderButtons />
+				<HeaderProfile />
+			</Row>
 		</header>
 	)
 }
