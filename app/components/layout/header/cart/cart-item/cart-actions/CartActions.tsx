@@ -5,7 +5,7 @@ import { FC } from 'react'
 import { useActions } from '@/hooks/useActions'
 import { useCart } from '@/hooks/useCart'
 
-import { ICartItem } from '@/types/cart.interface'
+import { ICartItem } from '@/shared/types/cart.interface'
 
 const CartActions: FC<{ item: ICartItem }> = ({ item }) => {
 	const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
@@ -21,7 +21,7 @@ const CartActions: FC<{ item: ICartItem }> = ({ item }) => {
 	const { removeFromCart, changeQuantity } = useActions()
 
 	const { cart } = useCart()
-	const quantity = cart.find(cartItem => cartItem.id === item.id)?.quantity
+	const quantity = cart.find((cartItem) => cartItem.id === item.id)?.quantity
 
 	return (
 		<div className='mt-3'>

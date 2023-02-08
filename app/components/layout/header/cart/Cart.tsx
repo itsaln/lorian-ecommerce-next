@@ -14,11 +14,12 @@ import { FC, useRef, useState } from 'react'
 
 import { useCart } from '@/hooks/useCart'
 
+import { PaymentService } from '@/services/PaymentService'
+
 import { formatToCurrency } from '@/utils/format-to-currency'
 
 import styles from './Cart.module.scss'
 import CartItem from './cart-item/CartItem'
-import { PaymentService } from '@/services/PaymentService'
 
 const Cart: FC = () => {
 	const [isOpen, setIsOpen] = useState(false)
@@ -63,7 +64,7 @@ const Cart: FC = () => {
 					<DrawerBody>
 						<div className={styles.cart}>
 							{cart.length ? (
-								cart.map(item => <CartItem item={item} key={item.id} />)
+								cart.map((item) => <CartItem item={item} key={item.id} />)
 							) : (
 								<div>Basket is empty!</div>
 							)}

@@ -9,7 +9,7 @@ const Loader: FC = () => {
 			thickness='4px'
 			speed='1s'
 			emptyColor='gray.200'
-			color={COLORS.green}
+			// color={COLORS.green}
 			size='xl'
 			display='block'
 			className='mx-auto'

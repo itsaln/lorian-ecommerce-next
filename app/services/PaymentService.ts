@@ -1,6 +1,6 @@
-import { IPaymentResponse } from '@/types/payment.interface'
-
 import { axiosClassic } from '@/api/api'
+
+import { IPaymentResponse } from '@/shared/types/payment.interface'
 
 const PAYMENT = 'payment'
 

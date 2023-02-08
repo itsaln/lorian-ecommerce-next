@@ -3,11 +3,11 @@ import { FC } from 'react'
 
 import CartActions from '@/layout/header/cart/cart-item/cart-actions/CartActions'
 
+import { ICartItem } from '@/shared/types/cart.interface'
+
 import { formatToCurrency } from '@/utils/format-to-currency'
 
 import styles from '../Cart.module.scss'
-
-import { ICartItem } from '@/types/cart.interface'
 
 const CartItem: FC<{ item: ICartItem }> = ({ item }) => {
 	return (

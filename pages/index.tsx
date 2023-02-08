@@ -4,7 +4,7 @@ import Home from '@/screens/home/Home'
 
 import { ProductService } from '@/services/ProductService'
 
-import { IProduct } from '@/types/product.interface'
+import { IProduct } from '@/shared/types/product.interface'
 
 export interface IProductsPage {
 	products: IProduct[]

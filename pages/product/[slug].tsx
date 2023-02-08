@@ -1,8 +1,8 @@
 import { NextPage } from 'next'
 
-import { IProductDetails } from '@/types/product.interface'
-
 import ProductDetails from '@/screens/product-details/ProductDetails'
+
+import { IProductDetails } from '@/shared/types/product.interface'
 
 const ProductDetailsPage: NextPage<IProductDetails> = ({ product }) => {
 	return <ProductDetails product={product} />

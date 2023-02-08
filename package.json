@@ -1,7 +1,14 @@
 {
-  "name": "bank-app-front-end",
+  "name": "lorian-ecommerce-next",
+  "description": "Lorian Ecommerce",
   "version": "0.1.0",
+  "author": {
+    "email": "itsaln23@gmail.com",
+    "name": "Aladin itsaln.web.app",
+    "url": "https://itsaln.web.app"
+  },
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -20,7 +20,7 @@ const Menu: FC = () => {
 
 			<nav>
 				<ul>
-					{menu.map(item => (
+					{menu.map((item) => (
 						<MenuItem key={item.link} item={item} />
 					))}
 				</ul>
