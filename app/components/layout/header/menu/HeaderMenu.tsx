@@ -8,7 +8,7 @@ import { menu } from './menu.data'
 
 const HeaderMenu: FC = () => {
 	return (
-		<Column size={4}>
+		<Column size={5}>
 			<div className={styles.menu}>
 				<nav>
 					<ul>
