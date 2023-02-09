@@ -2,7 +2,7 @@ import { GetStaticProps, NextPage } from 'next'
 
 import Home from '@/screens/home/Home'
 
-import { ProductService } from '@/services/ProductService'
+import { ProductService } from '@/services/product.service'
 
 import { IProduct } from '@/shared/types/product.interface'
 

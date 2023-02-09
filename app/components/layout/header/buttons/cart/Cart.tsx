@@ -4,7 +4,7 @@ import { FC, useRef, useState } from 'react'
 
 import { useCart } from '@/hooks/useCart'
 
-import { PaymentService } from '@/services/PaymentService'
+import { PaymentService } from '@/services/payment.service'
 
 import { formatToCurrency } from '@/utils/format-to-currency'
 

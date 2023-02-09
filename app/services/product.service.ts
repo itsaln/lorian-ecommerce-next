@@ -7,15 +7,15 @@ import { IProduct } from '@/shared/types/product.interface'
 const PRODUCTS = '/products'
 
 export const ProductService = {
-	// async getProducts(type?: EnumSorting) {
-	// 	const { data } = await axiosClassic.get<IProduct[]>(PRODUCTS, {
-	// 		params: {
-	// 			sortType: type
-	// 		}
-	// 	})
-	//
-	// 	return data
-	// },
+	async getProducts(type?: EnumSorting) {
+		const { data } = await axiosClassic.get<IProduct[]>(PRODUCTS, {
+			params: {
+				sortType: type
+			}
+		})
+
+		return data
+	},
 
 	async bySearchTerm(searchTerm: string) {
 		return axiosClassic.get<IProduct[]>(`${PRODUCTS}/search`, {
