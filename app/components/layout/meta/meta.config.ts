@@ -1,2 +1,2 @@
-export const siteName = 'X-MAS SHOP'
+export const siteName = 'Lorian Ecommerce'
 export const titleMerge = (title: string) => `${title} | ${siteName}`
