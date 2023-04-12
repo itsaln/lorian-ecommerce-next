@@ -12,6 +12,8 @@ import Row from '@/ui/grid/Row'
 import { IProductsPage } from '../../../../pages'
 
 const Shop: FC<IProductsPage> = ({ products }) => {
+	console.log(products)
+
 	return (
 		<Layout title='Shop' description='Catalog clothing and accessories'>
 			<Row
