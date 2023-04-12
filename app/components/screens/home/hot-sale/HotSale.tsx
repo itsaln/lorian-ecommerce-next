@@ -12,7 +12,7 @@ const HotSale: FC = () => {
 					<span className='font-normal text-3xl'>{formatToCurrency(195)}</span>
 					<span className='line-through opacity-50 text-sm ml-2'>{formatToCurrency(195)}</span>
 				</div>
-				<button className='text-sm text-white uppercase border-b border-white/20'>Buy now</button>
+				<button className='btn-link'>Buy now</button>
 			</div>
 		</div>
 	)
